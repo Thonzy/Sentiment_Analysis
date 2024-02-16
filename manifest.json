@@ -1,29 +1,27 @@
 {
-    "manifest_version": 3,
-    "name": "Summarize-R!",
-    "description":"Text Summarizer Extension",
-    "version":"1.0.1",
-    "icons": {
-        "16": "/images/icon16.png",
-        "48": "/images/icon48.png",
-        "128": "/images/icon128.png"
-    },
-    "background": {
-        "service_worker": "service_worker.js",
-        "type": "module"
-    },
-
-    "action": {
-        "default_popup": "index.html"
-    },
-    "permissions": [
-        "scripting",
-        "activeTab"
-    ],
-
-    "host_permissions": [
-        "<all_urls>"
-    ],
-
-    "run_at": "document_idle"
+  "manifest_version": 2,
+  "name": "Sentiment Analyzer",
+  "version": "1.0",
+  "description": "Analyze sentiment of text on web pages.",
+  "permissions": ["activeTab"],
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "/images/icon16.png",
+      "48": "/images/icon32.png",
+      "128": "/images/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "/images/icon16.png",
+      "48": "/images/icon32.png",
+      "128": "/images/icon128.png"
+  },
+  "background": {
+    "service_worker": "service_worker.js"
+  },
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_icon": "/images/icon16.png"
+  }
 }

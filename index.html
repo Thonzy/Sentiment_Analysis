@@ -1,15 +1,13 @@
+<!-- popup.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Summarizer</title>
+  <title>Sentiment Analyzer</title>
+  <script src="popup.js"></script>
 </head>
 <body>
-    <h1>Hello!</h1>
-    <button id="myButton">Summarize Selected Text</button>
-    <div id="summary"></div>
-
-    <script src="index.js"></script>
+  <textarea id="inputText" placeholder="Enter text to analyze"></textarea><br>
+  <button id="analyzeButton">Analyze Sentiment</button>
+  <div id="result"></div>
 </body>
 </html>
